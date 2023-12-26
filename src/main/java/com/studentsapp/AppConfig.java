@@ -27,7 +27,10 @@ public class AppConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("*"); // Разрешает все источники
+                registry.addMapping("/**")
+                        .allowedOrigins("*") // Разрешает все источники
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // Разрешает все основные методы
+                        .allowedHeaders("*"); // Разрешает все заголовки
             }
         };
     }
