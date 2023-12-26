@@ -12,4 +12,4 @@ RUN sqlite3 /path/in/container/students_db.sqlite < /path/in/container/init_db.s
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "your-app.jar"]
+CMD ["java", "-jar", "target/demo-0.0.1-SNAPSHOT.jar"]

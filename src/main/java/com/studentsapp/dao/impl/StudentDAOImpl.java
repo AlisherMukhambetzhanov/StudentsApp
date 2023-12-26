@@ -2,11 +2,13 @@ package com.studentsapp.dao.impl;
 
 import com.studentsapp.dao.StudentDAO;
 import com.studentsapp.model.Student;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class StudentDAOImpl implements StudentDAO {
     private Connection connection;
 
