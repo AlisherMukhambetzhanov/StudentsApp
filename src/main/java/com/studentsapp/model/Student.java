@@ -9,6 +9,7 @@ public class Student {
     private String groupName;
 
     public Student(int id, String firstName, String lastName, String middleName, String birthDate, String groupName) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
